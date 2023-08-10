@@ -1,0 +1,148 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #19344f;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #162538;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 0 20px;
+
+}
+
+.logo img {
+  width: 100px;
+  height: auto;
+}
+
+.search-bar input {
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+}
+
+.profile-bar img {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+
+
+
+
+.galeria-videos {
+  display: flex;
+  overflow-x: auto;
+  padding: 20px;
+  margin-top: 50px; /* Distância da header */
+  margin-left: 30px; /* Distância da sidebar */
+}
+
+
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 4px; 
+  background-color: #ffffff;
+  border-radius: 4px;
+}
+
+.search-bar input {
+  padding: 4px; 
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  flex-grow: 1;
+}
+
+
+.search-icone {
+  width: 17px; 
+  height: 17px; 
+  margin-left: 4px; 
+}
+.profile-bar {
+  display: flex;
+  align-items: center;
+}
+
+
+.profile-name {
+  margin-left: 10px;
+  font-size: 12px;
+  font-weight: lighter;
+  color: #ffffff;
+  text-align: center; /* Adicione esta linha */
+}
+
+/* ... Efeitos barra do perfil ... */
+
+.profile-bar {
+  transition: color 0.3s; /* Adicione esta linha para a transição de cor */
+}
+
+.profile-bar:hover {
+  color: #8AB4EA;
+}
+
+
+.profile-bar img,
+.profile-name {
+  transition: color 0.3s; /* Adicione esta linha para a transição de cor */
+}
+
+.profile-bar:hover img,
+.profile-bar:hover .profile-name {
+  color: #8AB4EA;
+}
+
+/* ... Sidebar ... */
+
+.sidebar {
+  position: fixed;
+  top: 60px; /* Inicio debaixo */
+  left: 0;
+  width: 120px; /* Largura da barra lateral */
+  height: calc(100vh - 60px); /* Altura igual à altura da viewport menos a altura da header */
+  background-color: rgba(0, 0, 0, 0.8); /* Cor de fundo preto com transparência */
+  opacity: 0.8; /* Nível de opacidade da sidebar */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-menu {
+  margin-bottom: auto; /* Move o menu para o topo da barra lateral */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-menu a {
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  position: relative; /* Adicione esta linha */
+}
+
+.sidebar-menu a:after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: white;
+  position: absolute;
+  bottom: -2px; /* Ajusta a posição da linha */
+  left: 0;
+}
+/* ... FimSidebar ... */
+
+
