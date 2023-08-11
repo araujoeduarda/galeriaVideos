@@ -7,7 +7,7 @@ body {
 
 .header {
   display: flex;
-  justify-content: space-between;
+  justify-content:center;
   align-items: center;
   height: 70px;
   background-color: #162538;
@@ -18,20 +18,22 @@ body {
   left: 0;
   right: 0;
   z-index: 1000; 
-  justify-content: space-between;
 }
 
-.logo img {
-  width: 100px;
-  height: auto;
-}
 
+.container-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
 
 .barra-perfil img {
   width: 50px;
-  height: 50px;
+  height: 40px;
   border-radius: 50%;
+  
 }
 
 .titulo {
@@ -84,7 +86,10 @@ body {
   
 }
 
-  
+iframe {
+  width: 370px; 
+  height: 185px;
+}
 
 .galeria-videos {
   display: flex;
@@ -99,8 +104,7 @@ body {
 
 .barra-perfil {
   display: flex;
-  align-items: center;
-  margin-right: 20px; 
+  align-items: center; 
 }
 
 
@@ -184,68 +188,49 @@ body {
 
 
 /* RESPONSIVO */
-@media (max-width: 1020px) {
+@media (max-width: 800px) {
+
   .sidebar {
     display: none;
   }
   .galeria-videos {
-    margin-left: 100px;
+    flex-direction: row;
+    overflow-x: auto;
+    margin-left: 0;
+    padding: 20px 0;
+  }
+
+  .video-container {
+    flex: 0 0 auto;
+    margin: 8px;
   }
   
-}
-
-
-@media (max-width: 900px) {
-  .galeria-videos {
-    margin-left: 80px;
-  }
-  .sidebar {
-    display: none;
-  }
-  .galeria-videos {
-    margin-left: 100px;
-  }
-  .header {
-    justify-content: center; /
-  }
-  .barra-perfil {
-    text-align: center; 
-    margin: 0; 
-  }
-  .nome-perfil {
-    display: none;
-  }
-  .barra-perfil {
-    width: auto!important;
+  .titulo {
+    margin-right: 20px;
+    margin-left: 20px;
   }
 }
 
+@media (max-width: 450px) {
 
-@media (max-width: 760px) {
+
   .galeria-videos {
-    margin-left: 60px;
+    flex-direction: row;
+    overflow-x: auto;
+    margin-left: 0;
+    padding: 10px 0;
   }
-}
 
-
-
-
-@media (max-width: 500px) {
-  .galeria-videos {
-    margin-left: 40px;
+  .video-container {
+    flex: 0 0 auto;
+    margin: 2px;
   }
-}
-
-
-@media (max-width: 400px) {
-  .galeria-videos {
+  
+  .titulo {
+    margin-right: 20px;
     margin-left: 20px;
   }
 }
 
 
-@media (max-width: 200px) {
-  .galeria-videos {
-    margin-left: 0;
-  }
-}
+
