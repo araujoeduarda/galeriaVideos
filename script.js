@@ -1,16 +1,9 @@
-const sidebarMenu = document.querySelector('.sidebar-menu');
-const videos = document.querySelectorAll('.video');
+document.addEventListener("DOMContentLoaded", function () {
+  const videoContainers = document.querySelectorAll(".video-container");
 
-sidebarMenu.addEventListener('click', (event) => {
-  if (event.target.tagName === 'A') {
-    const tag = event.target.getAttribute('data-tag');
-    videos.forEach(video => {
-      const videoTags = video.getAttribute('data-tags').split(',');
-      if (videoTags.includes(tag)) {
-        video.style.display = 'block';
-      } else {
-        video.style.display = 'none';
-      }
-    });
-  }
+  videoContainers.forEach(function (container, index) {
+    setTimeout(function () {
+      container.classList.add("aparecer"); 
+    }, index * 300); 
+  });
 });
