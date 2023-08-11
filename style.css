@@ -31,7 +31,7 @@ body {
 
 .barra-perfil img {
   width: 50px;
-  height: 40px;
+  height: 50px;
   border-radius: 50%;
   
 }
@@ -217,13 +217,15 @@ iframe {
   .galeria-videos {
     flex-direction: row;
     overflow-x: auto;
-    margin-left: 0;
+    margin-left: 4px;
+    margin-right: 4px;
     padding: 10px 0;
   }
 
   .video-container {
     flex: 0 0 auto;
     margin: 2px;
+    padding: 1px;
   }
   
   .titulo {
