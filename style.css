@@ -101,6 +101,7 @@ iframe {
   padding: 20px;
   margin-top: 20px; 
   margin-left: 150px;
+   max-width: 1900px; 
 } 
 
 
@@ -146,7 +147,7 @@ iframe {
   position: fixed;
   top: 60px; 
   left: 0;
-  width: 145px; 
+  width: 170px; 
   height: calc(100vh - 60px); 
   background-color: rgba(0, 0, 0, 0.8); 
   opacity: 0.8; 
@@ -190,7 +191,8 @@ iframe {
 
 
 /* RESPONSIVO */
-@media (max-width: 800px) {
+
+@media (max-width: 1005px) {
 
   .sidebar {
     display: none;
@@ -212,6 +214,61 @@ iframe {
     margin-left: 20px;
   }
 }
+
+@media (max-width: 880px) {
+
+  .sidebar {
+    display: none;
+  }
+  .galeria-videos {
+    flex-direction: row;
+    overflow-x: auto;
+    margin-left: 0;
+    padding: 20px 0;
+  }
+
+  .video-container {
+    flex: 0 0 auto;
+    margin: 8px;
+  }
+  
+  .titulo {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 820px) {
+  .galeria-videos {
+    flex-direction: row;
+    overflow-x: auto;
+    margin-left: 4px;
+    margin-right: 4px;
+    padding: 10px 0;
+  }
+
+  .video-container {
+    flex: 0 0 auto;
+    margin: 2px;
+    padding: 1px;
+  }
+}
+@media (max-width: 800px) {
+  .galeria-videos {
+    display: flex;
+    flex-wrap: nowrap; /* Impede que os vídeos quebrem em várias linhas */
+    gap: 12px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 15px;
+    overflow-x: auto; /* Adiciona a barra de rolagem horizontal quando necessário */
+    max-width: 100%; /* Defina um tamanho máximo */
+  }
+  
+  /* Restante do seu CSS... */
+  
+}
+
 
 @media (max-width: 450px) {
 
