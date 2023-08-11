@@ -35,16 +35,30 @@ body {
 }
 
 
-
-
+.video-container {
+  margin: 8px;
+  padding: 4px;
+  background-color: #091F2C;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  }
+  
+  .video-label {
+    color: white;
+    text-align: center;
+  }
+  
 
 .galeria-videos {
   display: flex;
-  overflow-x: auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 15px; /* Distância entre os vídeos */
   padding: 20px;
-  margin-top: 50px; /* Distância da header */
-  margin-left: 30px; /* Distância da sidebar */
+  margin-top: 110px; /* Distância da header e da barra de pesquisa */
+  margin-left: 150px; /* Distância da sidebar */
 }
+
 
 
 .search-bar {
