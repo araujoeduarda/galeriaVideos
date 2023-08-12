@@ -192,6 +192,12 @@ iframe {
 
 /* RESPONSIVO */
 
+@media (max-width: 2000px) {
+button {
+  display: none;
+}
+}
+
 @media (max-width: 1005px) {
 
   .sidebar {
@@ -256,17 +262,16 @@ iframe {
 @media (max-width: 800px) {
   .galeria-videos {
     display: flex;
-    flex-wrap: nowrap; /* Impede que os vídeos quebrem em várias linhas */
+    flex-wrap: nowrap; 
     gap: 12px;
     padding: 20px;
     margin-top: 20px;
     margin-left: 15px;
-    overflow-x: auto; /* Adiciona a barra de rolagem horizontal quando necessário */
-    max-width: 100%; /* Defina um tamanho máximo */
+    overflow-x: auto; 
+    max-width: 100%; 
   }
   
-  /* Restante do seu CSS... */
-  
+
 }
 
 
