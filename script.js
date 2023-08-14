@@ -19,6 +19,7 @@
     }
 
     
+//Aparecimento do video//
 
     function loadVideo(videoId) {
       const videoContainer = document.getElementById("video-container");
