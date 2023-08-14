@@ -48,62 +48,44 @@ body {
 }
 
 .maquinario {
-  padding-bottom: 70px;
+  padding-bottom: 0; 
+  margin-bottom: 20px;
 }
 
-.video-container {
-  margin: 8px;
-  padding: 8px;
-  padding-bottom: 24px;
-  background-color: #091F2C;
-  border-radius: 4px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
-  transition: background-color 0.3s ease-in-out;
-  position: relative;
-  overflow: hidden; 
-}
-
-
-
-
-.video-container:hover {
-  transform: translateY(-3px);
-  transition: transform 0.2s ease-in-out;
-  background-color: rgba(9, 31, 44, 0.3);
-}
-
-
-
-.video-legenda {
-  color: white;
-  text-align: center;
-  padding: 0;
-  background-color: rgba(9, 31, 44, 0.0);
-  position: absolute;
-  bottom: 4px;
-  left: -110px; 
-  width: calc(100% - 20px); 
-  margin: 0;
-  
-  
-}
-
-iframe {
-  width: 370px; 
-  height: 185px;
-}
 
 .galeria-videos {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  gap: 12px; 
-  padding: 20px;
-  margin-top: 20px; 
-  margin-left: 150px;
-   max-width: 1900px; 
-} 
+  gap: 12px;
+  padding: 10px 20px; 
+  margin-top: 20px;
+  margin-left: 180px;
+  max-width: 1900px;
+}
 
+.galeria-videos ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.galeria-videos li {
+  flex: 0 0 100%; /* Cada item da lista full width */
+}
+
+.galeria-videos a {
+  display: block;
+  padding: 10px 0;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.galeria-videos a:hover {
+  color: #8AB4EA;
+}
 
 .barra-perfil {
   display: flex;
@@ -210,10 +192,6 @@ button {
     padding: 20px 0;
   }
 
-  .video-container {
-    flex: 0 0 auto;
-    margin: 8px;
-  }
   
   .titulo {
     margin-right: 20px;
@@ -233,10 +211,6 @@ button {
     padding: 20px 0;
   }
 
-  .video-container {
-    flex: 0 0 auto;
-    margin: 8px;
-  }
   
   .titulo {
     margin-right: 20px;
@@ -253,11 +227,6 @@ button {
     padding: 10px 0;
   }
 
-  .video-container {
-    flex: 0 0 auto;
-    margin: 2px;
-    padding: 1px;
-  }
 }
 @media (max-width: 800px) {
   .galeria-videos {
@@ -286,12 +255,6 @@ button {
     padding: 10px 0;
   }
 
-  .video-container {
-    flex: 0 0 auto;
-    margin: 2px;
-    padding: 1px;
-  }
-  
   .titulo {
     margin-right: 20px;
     margin-left: 20px;
