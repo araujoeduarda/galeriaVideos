@@ -5,6 +5,8 @@ body {
   background-color: #19344f;
 }
 
+
+
 .header {
   display: flex;
   justify-content:center;
@@ -54,14 +56,11 @@ body {
 
 
 .galeria-videos {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
   gap: 12px;
   padding: 10px 20px; 
   margin-top: 20px;
   margin-left: 180px;
-  max-width: 1900px;
+  max-width: 500px;
 }
 
 
@@ -71,7 +70,6 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
-  width: 100%;
 }
 
 .galeria-videos li {
@@ -206,6 +204,10 @@ button {
     margin-right: 20px;
     margin-left: 20px;
   }
+  .galeria-videos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;}
 }
 
 @media (max-width: 880px) {
@@ -261,12 +263,16 @@ button {
     overflow-x: auto;
     margin-left: 4px;
     margin-right: 4px;
-    padding: 10px 0;
+    padding: 2px 0;
   }
 
   .titulo {
     margin-right: 20px;
     margin-left: 20px;
+  }
+  .titulo-video {
+    font-size: 1rem; 
+    white-space: nowrap;
   }
 }
 
