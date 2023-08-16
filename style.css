@@ -178,6 +178,16 @@ body {
   width: 100%;
   height: auto;
 }
+@media (min-width: 1200px) {
+  .galeria-videos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .galeria-videos ul {
+    width: 100%;
+  }
+}
 
 
 /* RESPONSIVO */
@@ -268,6 +278,5 @@ button {
     margin-left: 20px;
   }
 }
-
 
 
