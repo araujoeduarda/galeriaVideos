@@ -5,8 +5,6 @@ body {
   background-color: #19344f;
 }
 
-
-
 .header {
   display: flex;
   justify-content:center;
@@ -56,11 +54,13 @@ body {
 
 
 .galeria-videos {
+  display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   padding: 10px 20px; 
   margin-top: 20px;
   margin-left: 180px;
-  max-width: 500px;
+  max-width: 1900px;
 }
 
 
@@ -70,6 +70,7 @@ body {
   list-style: none;
   padding: 0;
   margin: 0;
+  width:55%;
 }
 
 .galeria-videos li {
@@ -204,10 +205,6 @@ button {
     margin-right: 20px;
     margin-left: 20px;
   }
-  .galeria-videos {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;}
 }
 
 @media (max-width: 880px) {
@@ -269,10 +266,6 @@ button {
   .titulo {
     margin-right: 20px;
     margin-left: 20px;
-  }
-  .titulo-video {
-    font-size: 1rem; 
-    white-space: nowrap;
   }
 }
 
