@@ -52,15 +52,25 @@ body {
   margin-bottom: 20px;
 }
 
-
 .galeria-videos {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  padding: 10px 20px; 
+  padding: 10px 20px;
   margin-top: 20px;
   margin-left: 180px;
   max-width: 1900px;
+}
+@media (max-width: 800px) {
+  .galeria-videos iframe {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-left: 3px;
+    justify-content: center; /* Centralizar itens */
+  }
 }
 
 
@@ -196,6 +206,7 @@ body {
 button {
   display: none;
 }
+
 }
 
 @media (max-width: 1005px) {
@@ -267,5 +278,4 @@ button {
     margin-left: 20px;
   }
 }
-
 

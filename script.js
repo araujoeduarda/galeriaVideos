@@ -24,7 +24,7 @@
 function loadVideo(videoId, containerId) {
   const videoContainer = document.getElementById(containerId);
   videoContainer.innerHTML = `
-    <div class="video-wrapper">
+    <div class="video-tam">
       <iframe width="560" height="315" src="https://www.youtube.com/embed/${videoId}" frameborder="0" allowfullscreen></iframe>
     </div>`;
 }
