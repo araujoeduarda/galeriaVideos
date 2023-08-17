@@ -203,12 +203,6 @@ button {
   .sidebar {
     display: none;
   }
-  .galeria-videos {
-    flex-direction: row;
-    overflow-x: auto;
-    margin-left: 0;
-    padding: 20px 0;
-  }
 
   
   .titulo {
@@ -222,12 +216,7 @@ button {
   .sidebar {
     display: none;
   }
-  .galeria-videos {
-    flex-direction: row;
-    overflow-x: auto;
-    margin-left: 0;
-    padding: 20px 0;
-  }
+
 
   
   .titulo {
